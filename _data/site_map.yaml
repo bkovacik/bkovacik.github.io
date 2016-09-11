@@ -1,0 +1,14 @@
+- name: about_me
+  url: /index.html
+
+- name: onemus
+  url: /projects/onemus.html
+
+- name: pancho
+  url: /projects/pancho.html
+
+- name: resume
+  url: /resume.pdf
+
+- name: contact_me
+  url: /contact.html

@@ -1,0 +1,7 @@
+<div class="left" id="nav-bar">
+  <ul id="nav-list">
+    {% for link in site.data.site_map %}
+      <a class="nav" href="{{ link.url }}"><li class="nav">{{ link.name | capitalize | replace: '_', ' ' }}</li></a>
+    {% endfor %}
+  </ul>
+</div>
