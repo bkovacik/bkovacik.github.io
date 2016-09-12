@@ -1,0 +1,20 @@
+<div>
+  <table>
+    {% for contact in site.contact %}
+      <tr>
+        <td>{{ contact.type }}</td>
+        <td>
+          {% if contact.link == null %}
+            {% if contact.data contains 'http' %}
+              <a href="{{ contact.data }}">{{ contact.data }}</a>
+            {% else %}
+              {{ contact.data }}
+            {% endif %}
+          {% else %}
+            <a href="{{ contact.link }}">{{ contact.data }}</a>
+          {% endif %}
+        </td>
+      </tr>
+    {% endfor %}
+  </table>
+</div>

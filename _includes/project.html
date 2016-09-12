@@ -1,0 +1,25 @@
+{% assign page_info = site.data.projects[page.title] %}
+{% comment %}{% site.newline contains '.\n' %}{% endcomment %}
+{% assign newline = site.newline | remove: '.' %}
+
+<h3>{{ page.title }}</h3>
+<p class='first'>{{ 'View project on <a href="' | append: page_info.link | append: '">github</a>' }}</p>
+<div>
+  <table>
+    <tr>
+      <th>Technology</th>
+      <th>Use</th>
+    </tr>
+    {% for tech in page_info.technologies %}
+      <tr>
+        <td>{{ tech.name }}</td>
+        <td>{{ tech.use }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+</div>
+
+{% assign description = page_info.description | split: newline %} 
+{% for paragraph in description %}
+  <p>{{ paragraph }}</p>
+{% endfor %}

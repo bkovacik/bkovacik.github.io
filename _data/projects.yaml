@@ -1,0 +1,34 @@
+Pancho:
+  link: http://www.github.com/bkovacik/pancho
+  technologies:
+    - name: C++
+      use: >
+        I used C++ everywhere.
+        I used it to read in audio files, image files, and other low level
+        assets. I also used it in higher-level applications, such as building
+        design patterns like the Factory Method, and general encapsulation.
+    - name: OpenGL
+      use: >
+        I used OpenGL as a 2D graphics library.
+        While OpenGL is generally used for 3D graphics, similar properties
+        apply to 2D graphics.
+    - name: CMake
+      use: Build system
+  description: |
+    Pancho and the Cloak of a Million Colors (Pancho) is a game I spent a summer working on. It follows a boy, Pancho, who has a powerful cloak that can change colors, in the process changing which superhuman powers it grants to Pancho, such as walking on water, flying, and destroying enemies. The goal is for the player, playing as Pancho, to run, climb, and jump his way out of a temple he has found himself stuck in. The temple does not make it easy to leave, putting traps, enemies, and puzzles in his way.
+    Currently, the game engine is near completion. The game engine was the most difficult part of Pancho, as I built it from scratch in C++ and OpenGL. While I knew C++ before the project, it was the first time attempting such a large project. I was also using OpenGL for the first time. Once the engine is complete, I will begin work creating the art and levels.
+
+Onemus:
+  link: http://www.github.com/bkovacik/onemus
+  technologies:
+    - name: Ruby on Rails
+      use: I used Ruby on Rails for the majority of the website, such as setting up the users and cards databases, modeling them, and adding a user interface to access them. I am using Ruby on Rails for its Websocket interface as well.
+    - name: PostgreSQL
+      use: Database
+    - name: HTML5/CSS3/SASS
+      use: Frontend
+    - name: jQuery/Coffeescript
+      use: I used jQuery and Coffeescript to improve the user's ease of use. For example, when creating cards, the website automatically shows and hides the fields that are and aren't needed, respectively. I also use jQuery/Coffeescript to interface with the server from the client side.
+  description: |
+    Onemus (On-eh-mus) is a card/board game that I have been working on for several years with a friend. Cards are separated into 6 different colors, each with different ideals and playstyles. Each player is represented by a hero, commanding an army, which fight against enemy armies to achieve victory.
+    Recently, I decided to convert Onemus into a website so that players can play over the internet. I implemented many important features, such as user storage and a card database. I'm currently working on implementing the game through the use of Websockets, which will then be followed by an optimization process to make the system even more scalable.
