@@ -1,7 +1,13 @@
 <div class="left" id="nav-bar">
   <ul id="nav-list">
     {% for link in site.data.site_map %}
-      <a class="nav" href="{{ link.url }}"><li class="nav">{{ link.name | capitalize | replace: '_', ' ' }}</li></a>
+      {% assign url = link.url | remove: 'index.html' %}
+      {% if page.url == url %}
+        {% assign active = " active" %}
+      {% else %}
+        {% assign active = "" %}
+      {% endif %}
+      <a class="nav{{ active }} {{ link.url | remove: 'index.html' }} {{ page.url}}" href="{{ link.url }}"><li class="nav{{ active }}">{{ link.name | capitalize | replace: '_', ' ' }}</li></a>
     {% endfor %}
   </ul>
 </div>
